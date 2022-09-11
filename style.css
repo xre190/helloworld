@@ -192,7 +192,7 @@ header{
 .show-menu .sidebar{
     right: 0;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    
+    z-index: 10;
 }
 
 .menu{
@@ -201,7 +201,6 @@ header{
     left: 50%;
     transform: translate(-50%,-50%);   
     letter-spacing: .1rem;
-    
 }
 
 .menu-item{
@@ -349,6 +348,7 @@ header{
     height: 25rem;
     position: relative;
     transition: .7s;
+    margin-bottom: 2rem;
 }
 
 .card:hover .card-img-wrapper{
@@ -387,7 +387,6 @@ header{
     bottom: 0;
     padding: 2rem;
     text-shadow: 0 .2rem .3rem rgba(0, 0, 0, 0.4);
- 
 }
 
 .card-info h2{
@@ -431,4 +430,120 @@ header{
     cursor: pointer;
 }
 
+.section-contact{
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 40rem;
+}
 
+.contact-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 .5rem 3rem rgba(0, 0, 0, 0.4); 
+}
+
+.contact-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
+
+.contact-left{
+    width: 35%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contact-right{
+    width: 65%;
+    height: 100%;
+    background-color: #ddd;
+   
+}
+
+.section-contact form{
+    padding: 2rem 0rem 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field-label{
+    color: #373b44;
+    text-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.4);
+    margin-left: .3rem;
+    top: -.6rem;
+    font-family: var(--font-action);
+    font-weight: bolder;
+    font-size: .5rem;
+    position: absolute;
+    left: 0;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    transition: all .75s;
+}
+
+.field{
+    width: 100%;
+    height: 1.5rem;
+    outline: none;
+    font-family: var(--font-primary);
+    font-size: .9rem;
+    font-weight: lighter;
+    color: #373b44;
+    line-height: 1rem;
+    left: 0;
+}
+
+.field-group{
+    position: relative;
+    margin-bottom: 1.5rem;
+    
+}
+
+/*.field:focus ~ label{
+    opacity: 0;
+    
+}*/
+
+
+.field-group textarea{
+    resize: none;
+    max-width: 25rem;
+    min-width: 25rem;
+    min-height: 15rem;
+    max-height: 15rem;
+}
+
+input.field{
+    width: 25rem;
+}
+
+.contact-right button{
+    font-family: var(--font-action);
+    font-size: 0.75rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*input:not(:placeholder-shown) .field-label{
+    background-color: green;
+  }
+  
+  input:placeholder-shown {
+    border-color: red;
+  }*/
