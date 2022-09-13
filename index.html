@@ -138,7 +138,7 @@
                         <h2>Projeto 01</h2>
                         <h3>JavaScript</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita ad vero molestiae omnis inventore repellendus, nemo officia perferendis minima?</p>
-                        <button>Saiba mais</button>
+                        <button class="btn">Saiba mais</button>
                     </div>
                 </div>
                 <div class="card">
@@ -149,7 +149,7 @@
                         <h2>Projeto 02</h2>
                         <h3>HTML</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ex voluptatem cupiditate autem deleniti sapiente architecto, esse hic possimus rem!</p>
-                        <button>Saiba mais</button>
+                        <button class="btn">Saiba mais</button>
                     </div>
                 </div>
                 <div class="card">
@@ -160,7 +160,7 @@
                         <h2>Projeto 03</h2>
                         <h3>CSS</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea pariatur exercitationem reiciendis laboriosam ad maxime at veniam, inventore voluptate? Ipsam!</p>
-                        <button>Saiba mais</button>
+                        <button class="btn">Saiba mais</button>
                     </div>
                 </div>
             </div>
@@ -188,15 +188,41 @@
                             <textarea name="" class="field" id="mensagem"></textarea>
                             <label for="mensagem" class="field-label">Mensagem</label>
                         </div>
-                        <button type="submit">Enviar</button>
+                        <button class="btn btn-contact" type="submit">Enviar</button>
                     </form>
                 </div>
             </div>
         </section>
 
-        <section class="footer">
-            <p>Todos direitos reservados</p>
+        <section class="section-budget">
+            <div class="section-header">
+                <h1>Faça seu orçamento</h1>
+            </div>
+            <div class="budget-wrapper">
+                
+                <form action="">
+                    <label for="qty">Quantidade de páginas</label>
+                    <input type="number" min="1" name="qty" id="qty">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-yes">
+                            <label for="layout-yes">Preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-no">
+                            <label for="layout-no">Já tenho um layout</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </section>
+
     </div>
 
 </body>
