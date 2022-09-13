@@ -8,6 +8,9 @@
     list-style: none;
     text-decoration: none;
 }
+ html{
+    scroll-behavior: smooth;
+ }
 
 :root{
     --font-primary: "Baloo Da 2",serif;
@@ -187,6 +190,7 @@ header{
     right: -20rem;
     transition: right .7s cubic-bezier(0, 0, 0.25, 1);
     overflow-y:auto;
+    z-index: 150;
 }
 
 .show-menu .sidebar{
@@ -212,12 +216,13 @@ header{
     color:#373b44;
     font-size: 0.9rem;
     line-height: 3rem;
+    transition: all .5s;
 }
 
 .menu-link:hover{
     font-size: 1rem;
     color: #4286f4;  /* fallback for old browsers */
-    transition: color .5s;
+    transition: all .5s;
     
 
     /*color: #4286f4;*/
@@ -549,16 +554,17 @@ input.field{
   }*/
 
   .section-budget{
-    width: 60%;
-    height: 80vh;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: 100%;
     font-size: 1rem;
+    margin-bottom: 2rem;
   }
 
   .budget-wrapper{
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 25rem;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -566,6 +572,8 @@ input.field{
     position: relative;
     background-image: url('images/budget.jpg');
     background-size: cover;
+    padding: 2rem;
+    
   }
 
   .budget-wrapper img{
@@ -573,18 +581,19 @@ input.field{
     width: 100%;
     height: 100%;
     position: absolute;
+    
 }
 
   .section-budget form{
-    margin: 2rem;
+    padding: 3rem;
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 2rem;
     row-gap: 1.5rem;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 3rem;
     color: #f1f1f1;
     box-shadow: 0 .5rem 3rem rgba(0, 0, 0, 0.4);
+    
   }
 
   .section-budget label{
@@ -610,7 +619,7 @@ input.field{
   }
 
   .section-budget input#qty{
-    width: 3rem;
+    width: 2rem;
     outline: none;
   }
 
@@ -621,3 +630,59 @@ input.field{
   .group-layout input{
     width: 1rem;
   }
+
+  footer{
+    width: 100%;
+    height: 3rem;
+    background-color: #4b4b4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-content p{
+    font-size: .8rem;
+    font-family: var(--font-primary);
+    color: #fafafa;
+  }
+
+  .social-list a{
+    margin: 0 2rem;
+    color: #fafafa;
+    font-size: 1.2rem;
+
+  }
+
+  .social-list ul{
+    display: flex;
+  }
+
+  .social-list ul i{
+    transition: color .7s;
+  }
+
+  .fab:hover{
+    color:#4286f4;
+    transition: color .7s;
+  }
+
+  #link-top{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(255,255,255,0.05);
+    color: #373B44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
