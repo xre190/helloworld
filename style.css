@@ -199,6 +199,10 @@ header{
     z-index: 10;
 }
 
+.show-menu #link-top{
+    visibility: hidden;
+}
+
 .menu{
     position: absolute;
     top: 40%;
