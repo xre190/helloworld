@@ -10,6 +10,7 @@
 }
  html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
  }
 
 :root{
@@ -591,6 +592,7 @@ input.field{
   .section-budget form{
     padding: 3rem;
     display: grid;
+    align-items: center;
     grid-template-columns: auto 1fr;
     column-gap: 2rem;
     row-gap: 1.5rem;
@@ -603,6 +605,13 @@ input.field{
   .section-budget label{
     font-family: var(--font-secondary);
     font-weight: bolder;
+  }
+
+  .section-budget label#price{
+    font-family: var(--font-action);
+    font-weight: bolder;
+    font-size: 2rem;
+    grid-column: 1;
   }
 
   .section-budget button{
